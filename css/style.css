@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    padding-top: 99px;
+}
+
+main section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffaa00;
+    transition: all 0.2s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.content-box {
+    line-height: 25px;
+}
+
+.content-box h2 {
+    padding: 20px 0;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card {
+    margin: 40px 0 0 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-container {
+    padding: 20px 15px;
+}
+
+.card h3 {
+    padding-bottom: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+}
+
+header {
+    background-color: #0c0902;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+.header-box label {
+    color: #ffaa00;
+    font-size: 35px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+
+.logo {
+    width: 95px;
+}
+
+.navbar {
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a:hover,
+.header-box label:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    height: 150px;
+}
+
+.main-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/sourdough.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 70px;
+    color: #ffaa00;
+    text-shadow: -3px -3px 5px black;
+}
+
+.main-section p {
+    color: white;
+}
+
+.food-section {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.748);
+    color: wheat;
+}
+
+.sobre-box {
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+.sobre-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background-color: #32280d;
+    color: #ffaa00;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    margin: 10px 0; 
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+    color: #32280d;  
+}
+
+/* inicio da pagina 2*/
+
+.objetivo-box {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.objetivo-box > div {
+    width: 100%
+}
+
+.objetivo-img-box {
+    margin: 60px 0 30px 0;
+}
+
+.objetivo-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.levain-box {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.levain-box img {
+    width: 100%;
+}
+
+.levain-box h2 {
+    margin-top: 20px;
+}
+
+/*inicio da página cardapio*/
+.cardapio {
+    background-color: rgba(0, 0, 0, 0.748);
+}
+
+.cardapio h2 {
+    color: wheat;
+    padding-top: 20px;
+}
+
+.card-cardapio {
+    background-color: #32280d;
+    color: #ffaa00;
+}
+
+.cardapio-box h2 {
+    color: wheat;
+}
+
+/*inicio pagina contato*/
+.img-section h1 {
+    font-size: 35px;
+    color: #ffaa00;
+    text-shadow: -3px -3px 5px black;
+}
+
+.img-section {
+    background-image: url('../img/sourdough-background.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 100px;
+}
+
+.img-section h1 {  
+    text-align: center;
+}
+
+.form-section {
+    background-color: rgba(0, 0, 0, 0.748);
+    color: #ffaa00;
+}
+
+.form-section h1 {
+    margin: 30px 0 40px 20px;
+    color: wheat;
+    text-shadow: 2px 2px 2px black;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+form input, textarea {
+    border-radius: 0%;
+    outline: none;
+    background-color: #32280d;
+    color: wheat;
+    padding: 10px; 
+    transition: all 0.4s;
+}
+
+form input:focus, textarea:focus {
+    background-color: white;
+    color: black; 
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 4px;
+}
+
+.redes-sociais-section {
+    background-color: #aa7406;
+    text-align: center;
+    padding-bottom: 20px;
+    color: wheat;
+}
+
+.redes-sociais-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.redes-sociais-box a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.redes-sociais-box a:nth-child(1) {
+    background-image: url('../img/instagram-wheat.svg');
+}
+
+.redes-sociais-box a:nth-child(2) {
+    background-image: url('../img/reddit-wheat.svg');
+}
+
+.redes-sociais-box a:nth-child(3) {
+    background-image: url('../img/whatsapp-wheat.svg');
+}
+
+.redes-sociais-box a:nth-child(4) {
+    background-image: url('../img/youtube-wheat.svg');
+}
+
+.redes-sociais-box a:nth-child(1):hover {
+    background-image: url('../img/instagram1.svg');
+}
+
+.redes-sociais-box a:nth-child(2):hover {
+    background-image: url('../img/reddit1.svg');
+}
+
+.redes-sociais-box a:nth-child(3):hover {
+    background-image: url('../img/whatsapp1.svg');
+}
+
+.redes-sociais-box a:nth-child(4):hover {
+    background-image: url('../img/youtube1.svg');
+}
+
+.redes-sociais-section p {
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: #0c0902;
+    color: #ffaa00;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-sections {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+footer h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+
+footer img {
+    width: 16px;
+}
+
+footer p {
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+
+.voltar-topo {
+    text-align: right;
+}
+
+.voltar-topo img {
+    width: 90px;
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {
+    .header-box {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-box label {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: row wrap;
+        overflow: unset;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 70px;
+    }
+
+    .main-section h1 {
+        font-size: 150px;
+    }
+
+    .main-section p {
+        font-size: 24px;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        margin: 40px 0 0 0;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+    
+    .card-container {
+        padding: 20px 15px;
+    }
+    
+    .card h3 {
+        padding-bottom: 15px;
+    }
+    
+    .card:hover {
+        box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+    }
+
+    .sobre-box {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .sobre-box > div{
+        width: 50%
+    }
+
+    .sobre-img-box img {
+        width: 80%;
+        height: 70%;
+    }
+
+    /*inicio pagina quem somos*/
+
+    .objetivo-box {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    
+    .objetivo-box > div{
+        width: 50%
+    }
+    
+    .objetivo-img-box img {
+        width: 80%;
+    }
+
+    .levain-box {
+        flex-flow: row-reverse wrap;
+    }
+
+    .levain-box > div {
+        width: 50%;
+    }
+
+    .levain-img-box img {
+        width: 90%;
+    }
+
+    /*inicio pagina contato*/
+    .form-section h1 {
+        text-align: center;
+    }
+    
+    .form {
+        width: 60%;
+        margin: auto;
+    }
+    
+    fieldset {
+        border: none;
+    }
+
+    .name {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .name > div {
+        width: 45%;
+    }
+    
+    form input, textarea {
+        border-radius: 0%;
+        outline: none;
+        background-color: #32280d;
+        color: wheat;
+        padding: 10px; 
+        transition: all 0.4s;
+    }
+    
+    form input:focus, textarea:focus {
+        background-color: white;
+        color: black; 
+    }
+    
+    form div {
+        margin-bottom: 20px;
+    }
+    
+    .field {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 4px;
+    }
+
+    .footer-sections {
+        justify-content: center;
+        gap: 200px;
+    }
+}
